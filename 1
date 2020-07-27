@@ -1,0 +1,29 @@
+
+1. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed
+in a comma-separated sequence on a single line.
+import pandas as pd
+import numpy as np
+
+listnumber=[]
+for i in range(2000,3200):
+    if (i%7 == 0)and (i%5 != 0):
+        listnumber.append(str(i))
+print(",".join(listnumber))
+
+2. Write a Python program to accept the user's first and last name and then getting them printed in the the reverse order with a space between first name and last name.
+
+fname=input("first name: ")
+lname=input("last name: ")
+print('Hello '+lname+" " +fname)
+
+3. Write a Python program to find the volume of a sphere with diameter 12 cm.
+Formula: V=4/3 * π * r 3
+   
+import math
+## diameter of sphere as 12 cm
+d=12
+## calculate radius using diameter
+r=d/2
+#volumn constant for volumn 
+v=4/3*math.pi*r**3
+print("volume of a sphere with diameter 12 cm is : ",v) 
